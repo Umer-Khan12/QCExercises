@@ -19,3 +19,14 @@ def add(z1, z2):
     number z1 + z2.
     """
     return getComplexNumber(z1[0] + z2[0], z1[1] + z2[1])
+
+
+def multiply(z1, z2):
+    """
+    Given two complex numbers z1, z2, returns the complex
+    number (z1)(z2) using the following formula:
+    (a + bi)(c + di) = (ac - bd) + (ad + bc)i
+    """
+    a = (z1[0] * z2[0]) - (z1[1] * z2[1])
+    b = (z1[0] * z2[1]) + (z2[0] * z1[1])
+    return getComplexNumber(a, b)
