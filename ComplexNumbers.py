@@ -18,4 +18,4 @@ def add(z1, z2):
     Given two complex numbers z1, z2, returns the complex
     number z1 + z2.
     """
-    return getComplexNumber(z1[0] + z2[0], z1[1] + z1[1])
+    return getComplexNumber(z1[0] + z2[0], z1[1] + z2[1])
