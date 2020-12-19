@@ -13,6 +13,14 @@ def getComplexNumber(a, b):
     return a, b
 
 
+def printComplexNumber(z):
+    """
+    Given a tuple representing a complex number,
+    return a string representation of that complex number.
+    """
+    return "(" + str(z[0]) + " + " + str(z[1]) + "i" + ")"
+
+
 def add(z1, z2):
     """
     Given two complex numbers z1, z2, returns the complex
